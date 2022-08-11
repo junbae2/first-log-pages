@@ -1,12 +1,16 @@
 {
   "name": "my-project",
   "source": "src/index.html",
+  "homepage": "https://github.com/junbae2/junbae2.github.io",
   "scripts": {
     "start": "parcel",
-    "build": "parcel build"
+    "build": "parcel build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "devDependencies": {
     "@babel/core": "^7.18.10",
+    "gh-pages": "^4.0.0",
     "parcel": "latest",
     "process": "^0.11.10"
   },
